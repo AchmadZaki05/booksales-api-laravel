@@ -10,16 +10,16 @@
     <thead>
         <tr>
             <th>No</th>
-            <th>Nama Genre</th>
+            <th>Nama</th>
             <th>Deskripsi</th>
         </tr>
     </thead>
     <tbody>
-        @foreach ($genres as $itemg => $genre)
+        @foreach ($genres as $itemg)
         <tr>
-            <td>{{ $itemg + 1 }}</td>
-            <td>{{ $genre['name'] }}</td>
-            <td>{{ $genre['description'] }}</td>
+            <td>{{ $itemg['id'] }}</td>
+            <td>{{ $itemg['name'] }}</td>
+            <td>{{ $itemg['description'] }}</td>
         </tr>
         @endforeach
     </tbody>

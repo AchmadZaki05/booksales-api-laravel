@@ -16,12 +16,12 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($authors as $itema => $author)
+        @foreach ($authors as $itema)
         <tr>
-            <td>{{ $itema + 1 }}</td>
-            <td>{{ $author['name'] }}</td>
-            <td>{{ $author['birth_year'] }}</td>
-            <td>{{ $author['nationality'] }}</td>
+            <td>{{ $itema['id'] }}</td>
+            <td>{{ $itema['name'] }}</td>
+            <td>{{ $itema['birth_year'] }}</td>
+            <td>{{ $itema['nationality'] }}</td>
         </tr>
         @endforeach
     </tbody>
