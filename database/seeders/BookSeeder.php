@@ -19,6 +19,8 @@ class BookSeeder extends Seeder
             'price' => 120000,
             'stock' => 10,
             'cover_photo' => 'silent_blade.jpg',
+            'genre_id' => 1,
+            'author_id' => 1,
             
         ]);
 
@@ -28,7 +30,8 @@ class BookSeeder extends Seeder
             'price' => 95000,
             'stock' => 7,
             'cover_photo' => 'love_in_autumn.jpg',
-            
+            'genre_id' => 2,
+            'author_id' => 2,
         ]);
 
         Book::create([
@@ -37,7 +40,8 @@ class BookSeeder extends Seeder
             'price' => 80000,
             'stock' => 15,
             'cover_photo' => 'laugh_out_loud.jpg',
-            
+            'genre_id' => 3,
+            'author_id' => 3,
         ]);
 
         Book::create([
@@ -46,7 +50,8 @@ class BookSeeder extends Seeder
             'price' => 110000,
             'stock' => 5,
             'cover_photo' => 'lost_city.jpg',
-            
+            'genre_id' => 4,
+            'author_id' => 4,
         ]);
 
         Book::create([
@@ -55,7 +60,8 @@ class BookSeeder extends Seeder
             'price' => 130000,
             'stock' => 8,
             'cover_photo' => 'science_tomorrow.jpg',
-    
+            'genre_id' => 5,
+            'author_id' => 5,
         ]);
 
     }

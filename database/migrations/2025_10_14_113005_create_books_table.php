@@ -18,6 +18,8 @@ return new class extends Migration
             $table->decimal('price', 10, 2); // harga buku
             $table->integer('stock');        // jumlah stok
             $table->string('cover_photo')->nullable(); // opsional: bisa kosong
+            $table->unsignedBigInteger('genre_id');
+            $table->unsignedBigInteger('author_id');
             $table->timestamps();
         });
     }
